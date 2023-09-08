@@ -1,0 +1,22 @@
+/* Online Java Compiler and Editor */
+class Complex{
+    String name;
+    String surname;
+    public Complex(String n,String s){
+        name=n;
+        surname=s;
+    }
+    static  Complex add(Complex obj1,Complex obj2){ 
+        return new Complex(obj1.name,obj1.surname+" "+obj2.surname);
+        
+    }
+}
+public class Ex{
+
+     public static void main(String []args){
+        Complex obj1=new Complex("Aishwarya ","Rai");
+        Complex obj2=new Complex("Abhisheek","Bacchan");
+        Complex obj3=Complex.add(obj1,obj2);
+        System.out.print(obj3.name+" "+obj3.surname+" "+";");
+     }
+}
