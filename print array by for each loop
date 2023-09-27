@@ -1,0 +1,17 @@
+//Wap to demonstate for each loop for array//
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	  // System.out.println("Enter the size of array: ");
+	   //int n=sc.nextInt();
+	  // System.out.println("Enter the elements: ");
+		int a[]={11,4,56};
+		for(int i:a){
+		    System.out.println(i);
+		    
+		}
+		
+	}
+}
