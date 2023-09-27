@@ -1,0 +1,27 @@
+//Wap to create a string array and search a perticular string enter by user found or not//
+import java.util.Scanner;
+//import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in);
+	   //System.out.println("Enter the size of array: ");
+	   //int n=sc.nextInt();
+	 String a[]={"Dog","Cat","man","car"};
+	  System.out.println("Enter any string: ");
+	  String s= sc.nextLine();
+	   //Scanner sc=new Scanner(System.in);
+	   for(int i=0;i<a.length;i++){
+	       if(s.equals(a[i])){
+	           System.out.println("found");
+	           break;
+	       }else{
+	            System.out.println(" not found");
+	            break;
+	       }
+	   }
+	   
+	 
+	  
+	}
+}
