@@ -1,0 +1,31 @@
+import java .util.Scanner;
+public class LinearsearchExample
+{
+    public  int linearsearch(int a[],int key){
+        for(int i=0;i<a.length;i++){
+            if(a[i]==key){
+                return i;
+            }
+        }
+        return -1;
+    }
+	public static void main(String[] args) {
+	    int n;
+	    Scanner sc=new Scanner(System.in);
+	    n=sc.nextInt();
+	    int a1[]=new int[n];
+	    for(int i=0;i<n;i++){
+	        a1[i]=sc.nextInt();
+	    }
+	    for(int j:a1){
+	        System.out.println(j);
+	    }
+	    int key=50;
+	    LinearsearchExample ob=new LinearsearchExample();
+	    int p= ob.linearsearch(a1,key);
+	    if(p==-1)
+	    System.out.println("key not found");
+	    else
+		System.out.println(key+"found index"+p);
+	}
+}
