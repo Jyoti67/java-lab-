@@ -1,0 +1,28 @@
+class Shape{
+    void area(int radius){
+        System.out.println("the area is : "+radius*radius); 
+    }
+    void peri(int radius){
+        System.out.println("the area is : "+2*3.14*radius); 
+    }
+}
+class Circle extends Shape{
+   
+    void area(int radius){
+        System.out.println("Area is : "+3.14*radius*radius);
+    }
+     void peri(int radius){
+        System.out.println("perimeter is : "+3.14*2*radius);
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        Shape s=new Shape();
+         Circle c=new Circle();
+         
+         c.area(3);
+         c.peri(4);
+         
+         
+    }
+}
