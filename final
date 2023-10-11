@@ -1,0 +1,22 @@
+  class FinalClass{
+    public   void eat(){
+        System.out.println("This is a final methode ");
+    }
+    
+}
+class main extends FinalClass{
+    public  void eat(){
+        super.eat();
+        System.out.println("The final Methode is overridden ");
+    }
+   
+ 
+}
+public class Main{
+    public static void main(String args[]){
+        Main obj=new Main();
+        obj.eat();
+         
+         
+    }
+}
