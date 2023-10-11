@@ -1,0 +1,31 @@
+//Demonstration of overloading
+class Parent{
+    void display(){
+        System.out.println("this is the parent class ");
+    }
+    void show(int num){
+        System.out.println("the number in the parent class is : "+num);
+    }
+}
+class Child extends Parent{
+    void display(){
+        System.out.println("this is the parent class ");
+    }
+    void show(double num){
+        System.out.println("the number in the parent class is : "+num);
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        Parent parentObj=new Parent();
+         Parent childObj=new Child();
+         
+         parentObj.show(5);
+         childObj.show(7.5);
+         
+         parentObj.display();
+         childObj.display();
+         
+         
+    }
+}
