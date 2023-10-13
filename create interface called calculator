@@ -1,0 +1,37 @@
+/Create a interface called calculator
+  interface calculator
+{
+  public void sum();
+  public void diff();
+  public void pro();
+  public void quo();
+ 
+
+}
+
+public class A implements calculator {
+    public void sum(){
+        System.out.println("sum="+4+5);
+    }
+     public void diff(){
+        System.out.println(87-6);
+    }
+    public void pro(){
+        System.out.println("multiplication="+4*5);
+    }
+     public void quo(){
+        System.out.println("Division="+35/5);
+    }
+
+
+
+
+  public static void main (String[]args)
+  {
+    A a=new A();
+    a.sum();
+    a.diff();
+    a.pro();
+    a.quo();
+  }
+}   
