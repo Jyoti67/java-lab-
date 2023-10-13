@@ -1,0 +1,37 @@
+//Create a interface called calculator
+  interface Machine
+{
+  public void start();
+  public void end();
+  
+ 
+
+}
+
+ class Waterpump implements Machine {
+    public void start(){
+        System.out.println("starting waterpump");
+    }
+     
+     public void end(){
+        System.out.println("ending waterpump");
+    }
+
+}
+
+public class Testing{
+  public static void main (String[]args)
+  {
+    Machine machine=new Waterpump();
+    machine.start();
+    machine.end();
+    
+    paint(new Waterpump());
+  }   
+  
+  public static void paint(Machine m){
+      m.stop();
+      System.out.println("Painting....");
+      m.start();
+  }
+}   
