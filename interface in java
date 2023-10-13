@@ -1,0 +1,65 @@
+ class Automobile
+{
+  public void start ()
+  {
+    System.out.println ("Engine starts running");
+  }
+  public void stop ()
+  {
+    System.out.println ("Engine stop running");
+  }
+  public void seatings ()
+  {
+  }
+}
+
+
+class Car extends Automobile
+{
+  public void No_of_tyers ()
+  {
+    System.out.println ("THere are 4 tyers");
+  }
+  public void fuel ()
+  {
+    System.out.println ("pertrol");
+  }
+  public void seatings ()
+  {
+    System.out.println ("4 seatings");
+  }
+
+}
+
+class Bike extends Automobile
+{
+  public void No_of_tyers ()
+  {
+    System.out.println ("THere are 2 tyers");
+  }
+  public void fuel ()
+  {
+    System.out.println ("pertrol");
+  }
+  public void seatings ()
+  {
+    System.out.println ("2 seatings");
+  }
+
+}
+
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Car c=new Car();
+    Bike b=new Bike();
+    c.No_of_tyers();
+    c.fuel();
+    c.seatings();
+    b.No_of_tyers();
+    b.fuel();
+    b.seatings();
+  }
+}
