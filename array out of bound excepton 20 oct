@@ -1,0 +1,16 @@
+public class A{
+   public static void cheakNum(int age) throws ArithmeticException{
+       if(age<18){
+           throw new ArrayIndexOutOfBoundsException("you must be 18 years old.");
+
+       }
+       else{
+           System.out.println("You are old enougth");
+       }
+   } 
+
+public static void main(String[] args) {
+    cheakNum(15);
+	}
+
+}
