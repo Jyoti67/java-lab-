@@ -1,0 +1,19 @@
+public class A{
+    static void cheakNum() throws ArithmeticException{
+       
+           
+System.out.println("Inside the methode");
+throw new ArithmeticException("");
+
+       }
+
+public static void main(String[] args) {
+    try{
+        cheakNum();
+    }
+    catch(ArithmeticException e){
+        System.out.println("caugtht in main methode");
+    }
+	}
+
+}
