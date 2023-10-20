@@ -1,0 +1,15 @@
+public class A{
+   public static void cheakNum(String s){
+       if(s==null){
+           throw new ArithmeticException("\n number is negative cant calculate suare");
+           
+       }
+   } 
+
+public static void main(String[] args) {
+    A th=new A();
+    th.cheakNum(null);
+		System.out.println("Rest of the code....");
+	}
+
+}
