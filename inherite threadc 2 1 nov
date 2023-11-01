@@ -1,0 +1,19 @@
+//inheritant thread class
+//threads : not dependency between two processes
+//operate more efficiently by doing muk=ltipli things at same Runtime//
+//thread class  created by two types:1 inheritance(extends) 2interface(impliments) 
+// 1.class thread,2.run() 3. A->object 4. obj.StackTraceElement
+//class runable,run(),A->object,thread t=new (a);,t.start.
+public class Main implements Runnable
+{
+	public static void main(String[] args) {
+	    Main t= new Main();
+	    Thread t=new Thread(t);
+	    t.start();
+	    
+		System.out.println("The code is outside of the thread");
+	}
+	public void run(){
+	    System.out.println("The code is running in the thread");
+	}
+}
