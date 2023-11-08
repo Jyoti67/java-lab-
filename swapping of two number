@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String args[]){
+ 
+ System.out.println("Enter any two numbers");
+ Scanner sc=new Scanner(System.in);
+ int a=sc.nextInt();
+ int b=sc.nextInt();
+ int c;
+ c=a;
+ a=b;
+ b=c;
+ System.out.println("The swapped numbers are:"+a+"
+"+"and"+" "+b);
+ }
+}
+4.Check whether a number is even or odd using
+if..else statemen
