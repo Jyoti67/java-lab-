@@ -1,0 +1,25 @@
+class Ex{
+    public <E> void printarray(E []s,E key) {
+        for(int i=0;i<s.length;i++){
+            if(key==s[i]){
+                System.out.println("Element is found"+i);
+            }else{
+                System.out.println("Element is not found");
+            }
+            //System.out.println(s[i]);
+        }
+    }
+    // public static void printarray(Integer []i) {
+    //     for(int i1=0;i1<i.length;i1++){
+    //         System.out.println(i[i1]);
+    //     }
+    //}
+
+public static void main(String args[]){
+    Ex obj=new Ex();
+    String s1[]=new String[]{"java","python","cpp"};
+    obj.printarray(s1,"cpp");
+    // Integer i[]={1,2,3,4};
+    // obj.printarray(i);
+}
+}
