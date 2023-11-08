@@ -1,0 +1,13 @@
+class Ex{
+    public static void printarray(String []s) {
+        for(int i=0;i<s.length;i++){
+            System.out.println(s[i]);
+        }
+    }
+
+public static void main(String args[]){
+    Ex obj=new Ex();
+    String s1[]=new String[]{"java","python","cpp"};
+    obj.printarray(s1);
+}
+}
