@@ -1,0 +1,17 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        
+        Callingclass call=new Callingclass();
+        call.<String>genericsMethode("429 and 12 are jyotis licckey number");
+        call.<Integer>genericsMethode(24);
+    }
+}
+class Callingclass{
+    public<t> void genericsMethode (t data){
+        System.out.println("Generics methode");
+        System.out.println("Data passed in : "+data);
+    }
+}
