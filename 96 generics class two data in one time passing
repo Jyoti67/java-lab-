@@ -1,0 +1,14 @@
+class Main {
+    public static void main(String[] args) {
+        
+        Callingclass call=new Callingclass();
+        call.<String,Integer>genericsMethode("429 and 12 are jyotis licckey number",24);
+       // call.<Integer>genericsMethode(24);
+    }
+}
+class Callingclass{
+    public<t,v> void genericsMethode (t data, v data1){
+        System.out.println("Generics methode");
+        System.out.println("Data passed in : "+data);
+    }
+}
